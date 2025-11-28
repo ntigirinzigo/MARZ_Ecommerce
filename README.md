@@ -1,16 +1,98 @@
-# React + Vite
+# Marz E-Commerce Prototype
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Marz Computers Logo](https://via.placeholder.com/120x40/2563eb/ffffff?text=Marz+Computers) <!-- Replace with actual logo if added -->
 
-Currently, two official plugins are available:
+A simple, responsive e-commerce prototype for selling computers (laptops, desktops, accessories). Built with React and Vite for fast development and deployment. This is a frontend-only app using mock data—no backend required for demo purposes.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Live Demo**: [https://ntigirinzigo.github.io/MARZ-Ecommerce](https://ntigirinzigo.github.io/MARZ-Ecommerce) <!-- Replace with your actual GitHub Pages URL -->
 
-## React Compiler
+## 🚀 Features
+- **Product Browsing**: Grid view of 8 sample products with images, prices, ratings, and descriptions.
+- **Search & Filter**: Real-time search by name/description + category dropdown (Laptop, Desktop, Accessory).
+- **Product Details**: Dynamic pages with zoomable images, quantity selector, and add-to-cart.
+- **Shopping Cart**: Global state management—add/remove/update quantities, subtotal calculations.
+- **Checkout**: Form for shipping/payment (mock validation), order summary, and simulated purchase.
+- **Responsive Design**: Mobile-first with Tailwind CSS—fixed header, hamburger menu, touch-friendly.
+- **Polish**: Loading spinners, error fallbacks (e.g., image placeholders), and smooth transitions.
+- **Deployment-Ready**: Optimized for static hosting (e.g., GitHub Pages, Vercel).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠 Tech Stack
+- **Frontend**: React 18 (hooks, Context API for cart state)
+- **Build Tool**: Vite (fast HMR, ES modules)
+- **Routing**: React Router DOM (dynamic routes like `/product/:id`)
+- **Styling**: Tailwind CSS (utility-first, responsive)
+- **Data**: Mock JSON (expandable to API)
+- **Other**: localStorage optional (cart persistence commented out)
 
-## Expanding the ESLint configuration
+## 📦 Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. **Clone the Repo**:
+   ```bash
+   git clone https://github.com/ntigirinzigo/MARZ-Ecommerce.git
+   cd marz-ecommerce
+   ```
+
+2. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
+
+3. **Run Development Server**:
+   ```bash
+   npm run dev
+   ```
+   - Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+4. **Build for Production**:
+   ```bash
+   npm run build
+   ```
+   - Outputs to `/dist` folder.
+
+## 🎮 Usage
+
+1. **Browse Products**: Navigate to `/products`—use search bar (e.g., "dell") or filter by category.
+2. **View Details**: Click "View Details" on a card → `/product/1` (e.g., Dell XPS).
+3. **Add to Cart**: Select quantity → "Add to Cart" (alert + console log).
+4. **Manage Cart**: Go to `/cart`—update qty, remove items, see totals.
+5. **Checkout**: From cart → "Proceed to Checkout" → Fill form → Submit (mocks success, clears cart, redirects home).
+
+**Pro Tips**:
+- Cart resets on refresh (add localStorage persistence from `CartContext.jsx` if needed).
+- Images from Unsplash (CDN)—replace with your assets in `src/data/products.js`.
+- Test mobile: Resize browser or use DevTools device emulation.
+
+## 📱 Screenshots
+
+### Home Page
+![Home](https://via.placeholder.com/800x400?text=Home+Hero+Banner) <!-- Add real screenshot -->
+
+### Products Grid (Desktop)
+![Products](https://via.placeholder.com/800x400?text=Products+Grid+with+Search) <!-- Filtered view -->
+
+### Cart & Checkout
+![Cart](https://via.placeholder.com/800x400?text=Shopping+Cart+Summary)  
+![Checkout](https://via.placeholder.com/800x400?text=Checkout+Form)
+
+## 🗺 Roadmap
+- **v2**: Backend integration (e.g., Firebase for auth/orders, real API).
+- **v3**: User authentication (login/register), wishlist, reviews.
+- **Polish**: Image carousel in details, Stripe payments, email receipts.
+- **Performance**: Lazy loading for products, PWA setup.
+
+## 🤝 Contributing
+1. Fork the repo.
+2. Create a feature branch (`git checkout -b feature/amazing-feature`).
+3. Commit changes (`git commit -m 'Add some amazing feature'`).
+4. Push to branch (`git push origin feature/amazing-feature`).
+5. Open a Pull Request.
+
+Feedback? Issues? Open a ticket or DM on X @yourhandle.
+
+## 📄 License
+This project is open-source under the MIT License. See [LICENSE](LICENSE) for details.
+
+---
+
+*Built with ❤️ by Ntigirinzigo J.paul on November 28, 2025. Inspired by modern e-comm UX.*  
+*Star the repo if it helps! ⭐*
