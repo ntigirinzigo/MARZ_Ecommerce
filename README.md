@@ -4,7 +4,7 @@
 
 A simple, responsive e-commerce prototype for selling computers (laptops, desktops, accessories). Built with React and Vite for fast development and deployment. This is a frontend-only app using mock data—no backend required for demo purposes.
 
-**Live Demo**: [https://ntigirinzigo.github.io/MARZ_Ecommerce](https://ntigirinzigo.github.io/MARZ-Ecommerce) <!-- Replace with your actual GitHub Pages URL -->
+**Live Demo**: [https://ntigirinzigo.github.io/MARZ_Ecommerce](https://ntigirinzigo.github.io/MARZ_Ecommerce) <!-- Replace with your actual GitHub Pages URL -->
 
 ## 🚀 Features
 - **Product Browsing**: Grid view of 8 sample products with images, prices, ratings, and descriptions.
